@@ -1,0 +1,58 @@
+/*main css start */
+.header-container
+{
+  display: flex;
+  padding:10px 20px;
+  background: #fff;
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+}
+@media (max-width:500px)
+{
+  .header-container
+  {
+    padding:10px;
+  }
+}
+.head-left
+{
+  flex:1;
+}
+.head-left img
+{
+ width: 100%;
+}
+.logo-wrap
+{
+  width: 40px;
+
+}
+.head-right
+{
+  flex:1;
+}
+.head-right nav
+{
+  width: 100%;
+}
+.head-right nav ul
+{
+  display: flex;
+  justify-content: flex-end;
+}
+.head-right nav ul li
+{
+  border-radius: 3px;
+  padding:10px 10px;
+  border:1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+.head-right nav ul li.is-active
+{
+  background: #fff;
+  border:1px solid #e0e0e0;
+}
+.main-content-container
+{
+  padding:30px 20px;
+}

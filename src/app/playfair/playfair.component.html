@@ -1,0 +1,23 @@
+<div class="playfair-container">
+  <div class="encryption-left">
+    <h1 class="type-title">PLAYFAIR</h1>
+    <div class="encryption-form">
+      <h3>Encryption</h3>
+      <div class="input-result-wrap">
+        <textarea name="name" (keyup.enter)="EncryptText()" [(ngModel)]="submittedtext" placeholder="Plain text"></textarea>
+        <div class="result-box">
+          <span *ngFor="let enctext of encryptedtext">{{enctext}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="encryption-form">
+      <h3 id="p1">Decryption</h3>
+      <div class="input-result-wrap">
+        <textarea name="name" (keyup.enter)="DecryptText()" [(ngModel)]="submittedCipher"  placeholder="Cipher text"></textarea>
+        <div class="result-box decrypt">
+          <span *ngFor="let dectext of decryptedtext">{{dectext}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

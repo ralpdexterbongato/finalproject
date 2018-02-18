@@ -1,0 +1,35 @@
+.home-text
+{
+  margin:auto;
+  font-size: 60px;
+  font-weight: bold;
+font-family: 'Poiret One', cursive;
+}
+@media (max-width:500px)
+{
+  .home-text
+  {
+    font-size: 10vw;
+  }
+}
+.home-container
+{
+  display: flex;
+  height: 90vh;
+}
+.blue
+{
+  color: #367FE9;
+}
+.red
+{
+  color: #EA4335;
+}
+.yellow
+{
+  color: #FBBC05;
+}
+.green
+{
+  color: #34A853;
+}
