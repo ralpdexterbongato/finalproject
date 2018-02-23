@@ -21,7 +21,7 @@ export class AtbashComponent implements OnInit {
   EncryptText()
   {
     this.encryptedtext =[];
-    var nospacetext = this.submittedtext.replace(/\s/g,'');
+    var nospacetext = this.submittedtext.replace(/\s/g,'').toLowerCase();
     var submittedArrayForm = nospacetext.split("");
     for(var i=0;i<submittedArrayForm.length;i++)
     {
@@ -36,7 +36,8 @@ export class AtbashComponent implements OnInit {
   }
   DecryptText()
   {
-    var nospacetext = this.submittedCipher.replace(/\s/g,'');
+    this.decryptedtext = [];
+    var nospacetext = this.submittedCipher.replace(/\s/g,'').toUpperCase();
     var submittedArrayForm = nospacetext.split("");
     for(var i=0;i<submittedArrayForm.length;i++)
     {
